@@ -3,52 +3,42 @@ body {
     font-size: 3rem;
 }
 
-a {
-    text-decoration: none;
-}
-
-#contain-image {
-    background-image: url("_ca089bcc-c73e-4000-8b49-650e59d369e7.png");
-     
-}
-
-#navbar {
-    float: left;
-    display: block;
-    padding-left: 50px;
-    padding-top: 50px;
-    font-size: 4rem;
-    border-bottom: 2px solid;
-    padding-bottom: 75px;
-}
-
-#navbar a:hover {
-    background-color: #dcdcdc;
-}
-
-#navbar input[type=text] {
-    float: right;
-    margin-left: 50px;
-    margin-top: 15px;
-    border: none;
-    font-size: 2.5rem;
-    background-color: #dcdcdc;
-}
-
-.img_logo {
-    display: block;
-    margin: auto;
-    width: 10%;
-    float: left;
-    padding-right: 50px;
+.container-fluid.active {
+    text-decoration: underline;
 }
 
 .shoppingCartLogo {
     display: block;
     margin: auto;
-    width: 10%;
+    width: 9%;
     float: right;
     padding-left: 5rem;
     justify-content: left;
 }
 
+.title {
+    font-size: 4rem;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+#header-img {
+    display: block;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-body {
+    text-align: center;
+    font-family: 'Barlow Condensed, sans-serif';
+}

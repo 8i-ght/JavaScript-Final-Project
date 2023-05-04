@@ -8,27 +8,75 @@
 
     <link href="styles.css" rel="stylesheet">
     <script src="program.js" async></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <section id="contain-image">
-    <div id="logo">
-        <a href="index.html"><img class="img_logo" src="_5b3669d6-64f6-4e07-82ae-7bf66eec6892.png"></a>
-      </div>
-    
-    <div id="navbar">
-        <a href="index.html">Home</a>
-        <a href="#men">Men</a>
-        <a href="#women">Women</a>
-        <a href="#sale">SALE!</a>
-        <input type="text" placeholder="Search..">
-    </div>
 
-    <div id="shopping_cart">
-        <a href="checkout.html"><img class="shoppingCartLogo" src="-shopping-cart_90604 (1).png"></a>
-    </div>
-</section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="BootStrap" width="40" height="40">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand" aria-current="page" href="index.html">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">SALE!</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a class="navbar-brand" href="checkout.html">
+                <img src="shopping.png" alt="BootStrap" width="40" height="40" style="margin-left: 40px;">
+              </a>
+          </div>
+        </div>
+      </nav>
 </header>
+
+<img id="header-img" src="header-img.png">
+
+<div class="card" style="width: 25%; margin-top: 100px;">
+    <img src="OIG.png" class="card-img-top" alt="Brown Shoe">
+    <div class="card-body">
+      <h5 class="card-title">FIND YOUR ZEN</h5>
+      <p class="card-text"> OPEN TOED HIGH-TOPS $95.00</p>
+      <a href="checkout.html" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <div class="card" style="width: 25%; margin-top: 100px;">
+    <img src="_23bdf622-dab0-4a01-ac4d-b514d0c72184.png" class="card-img-top" alt="Brown Shoe">
+    <div class="card-body">
+      <h5 class="card-title">BE SENSATIONAL</h5>
+      <p class="card-text">HIGH STYLE HIGH-TOPS $150.00</p>
+      <a href="checkout-2.html" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+  <div class="card" style="width: 25%; margin-top: 100px;">
+    <img src="_92b182aa-5a6d-4c5f-b591-137636a6ac79.png" class="card-img-top" alt="Brown Shoe">
+    <div class="card-body">
+      <h5 class="card-title">FIND YOUR PATH</h5>
+      <p class="card-text">LOW-TOP RUNNERS $110.00</p>
+      <a href="checkout-3.html" class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
 
 
 

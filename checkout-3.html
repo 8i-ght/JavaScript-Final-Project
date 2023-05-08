@@ -64,21 +64,11 @@
             <td>
                <label> Low-Top Runners</label>
                <input type="hidden" name="modelCost" id="modelCost" value="110.00" />
-               <input type="hidden" id="modelName" name="modelName" value="Low-Top Runners ($110.00)" />
-            </td>
-            <td class="rightA">
-               <label for="modelQty">Qty</label>
-               <select name="modelQty" id="modelQty">
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option><option value="3">3</option>
-                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-                  <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                  <option value="10">10</option>
-               </select>   
-            </td>                 
-            <td>
-               <input type="text" name="orderCost" id="orderCost" size="10" readonly />
-            </td>
+               <input type="hidden" id="modelName" name="modelName" value="110.00" />
+            </td>         
+               <td>
+                  <input type="text" name="orderCost" id="orderCost" size="10" readonly />
+               </td>
          </tr>
          <tr>
           <td>
@@ -99,6 +89,22 @@
                   <option>16</option>
                </select>   
           </td>
+         </tr>
+         <tr>
+            <td>
+               <label> Insurance ($20.00 per year)</label>
+            </td>
+            <td class="rightA">
+               <label for="modelQty">Yrs</label>
+               <select name="modelQty" id="modelQty">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+               </select>   
+            </td>            
+            <td>
+               <input type="text" name="orderPrice" id="orderPrice" size="10" readonly />
+            </td>     
          </tr>
          <tr>
             <td colspan="2"> 

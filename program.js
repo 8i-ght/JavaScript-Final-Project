@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     calcCart();
     var cart= document.forms.cart;
     cart.elements.modelQty.onchange = calcCart;
-    var InsuranceOptions = document.querySelectorAll('option[name = "insurance"]');
+    var InsuranceOptions = document.querySelectorAll('input[name = "insurance"]');
     var ShippingOptions = document.querySelectorAll('input[name = "shipping"]');
     for (var i = 0; i < ShippingOptions.length; i++) {
       ShippingOptions[i].onclick = calcCart;
@@ -26,17 +26,23 @@ window.addEventListener("load", function(){
   
       var shipCost = document.querySelector('input[name = "shipping"]:checked').value * 1;
       cart.elements.shippingCost.value = formatNumber(shipCost, 2);
+
+      var insurCost = document.querySelector('input[name = "insurance"]:checked').value * 1;
+      cart.elements.insuranceCost.value = formatNumber(insurCost, 2);
   
       
       cart.elements.subTotal.value = formatNumber(orderCost + shipCost, 2);
+      cart.elements.subTotal.value = formatNumber(orderCost + insurCost, 2);
   
   
       var salesTax = 0.05 * (orderCost+shipCost);
       cart.elements.salesTax.value = formatNumber(salesTax, 2);
   
-      cart.elements.cartTotal.value = formatUSCurrency((orderCost+shipCost+salesTax), 2);
+      cart.elements.cartTotal.value = formatUSCurrency((orderCost+shipCost+salesTax+insurCost), 2);
+
   
       cart.elements.shippingType.value = document.querySelector('input[name ="shipping"]:checked').nextSibling.nodeValue;
+      cart.elements.insuranceType.value = document.querySelector('input[name ="insurance"]:checked').nextSibling.nodeValue;
       }
   
   

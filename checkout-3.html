@@ -62,10 +62,18 @@
       <table id="cartTable">
          <tr>
             <td>
-               <label> Low-Top Runners</label>
-               <input type="hidden" name="modelCost" id="modelCost" value="110.00" />
-               <input type="hidden" id="modelName" name="modelName" value="110.00" />
-            </td>         
+               <label> Low-Top Runners ($110.00) </label>
+               <input type="hidden" name="modelCost" id="modelCost" value="95.00" />
+               <input type="hidden" id="modelName" name="modelName" value="Insurance (95.00)" />
+            </td>    
+            <td class="rightA">
+               <label for="modelQty">Qty</label>
+               <select name="modelQty" id="modelQty">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+               </select>   
+            </td>                 
                <td>
                   <input type="text" name="orderCost" id="orderCost" size="10" readonly />
                </td>
@@ -91,21 +99,19 @@
           </td>
          </tr>
          <tr>
-            <td>
-               <label> Insurance ($20.00 per year)</label>
+            <td colspan="2"> 
+               <input type="hidden" id="insuranceType" name="insuranceType" />                
+               <fieldset>
+                  <legend>Insurance</legend>
+                  <label><input type="radio" id="overnight" name="insurance" value="20.00" checked /> 1 year ($20)</label>
+                  <label><input type="radio" id="day_2" name="insurance" value="40.00" /> 2 years ($40)</label>   
+                  <label><input type="radio" id="ground" name="insurance" value="60.00" /> 3 years ($60)</label> 
+               </fieldset>
             </td>
-            <td class="rightA">
-               <label for="modelQty">Yrs</label>
-               <select name="modelQty" id="modelQty">
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-               </select>   
-            </td>            
             <td>
-               <input type="text" name="orderPrice" id="orderPrice" size="10" readonly />
-            </td>     
-         </tr>
+               <input type="text" name="insuranceCost" id="insuranceCost" size="10" readonly />
+            </td>
+         </tr>       
          <tr>
             <td colspan="2"> 
                <input type="hidden" id="shippingType" name="shippingType" />                
